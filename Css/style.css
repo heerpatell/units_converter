@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer-div{
+    background-color: #e5ccce;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.inner-div{
+    width: 100vw;
+    height: 60vh;
+    background-color: #f7f6ee;
+    border-radius: 10px;
+}
+.heading{
+    margin-top: 2vh;
+    font-size: 2rem;
+    color: #1f4a59;
+}
+.FromTo{
+    font-size: 1.2rem;
+    color: #194973;
+    display: flex;
+    margin-bottom: 1vh;
+}
+#inp{
+    border: none;
+    background-color: #e5ccce;
+    padding: 5px;
+    width: 110px;
+    text-align: center;
+    appearance: textfield;
+}
+#ansField{
+    border: none;
+    background-color: #adf09b;
+    padding: 5px;
+    width: 110px;
+    appearance: textfield;
+    text-align: center;
+    color:#1f4a59
+}
+#from{
+    background-color: #ffdc61;
+    border: none;
+    padding: 5px;
+    margin-top: 6px;
+    width: 110px;
+    color: #1f4a59;
+}
+#To{
+    background-color: #ffdc61;
+    border: none;
+    padding: 5px;
+    width: 110px;
+    margin-top: 6px;
+    color: #1f4a59;
+}
+.finalAns{
+    display: grid;
+    place-items: center;
+    margin-top: 3vh;
+}
+#result{
+    font-size: 1.5rem;
+    color: #1f4a59;
+}

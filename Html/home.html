@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="/Css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="outer-div">
+        <div class="inner-div">
+            <form id="form" onsubmit="calculate(); return false" >
+                <div class="heading">
+                    <label for="unit" id="label" style="display: flex; align-items: center;justify-content: center;">Enter the units you want to convert</label><br><br>
+                </div>
+                <!-- <div class="FromTo" style="margin-left: 40vw;">
+                    <span>From : </span><span style="margin-left: 7vw;">To : </span>
+                </div> -->
+                <div style="margin-left: 40vw;">
+                    <span>Enter unit :</span><input type="number" name="unit" id="inp" placeholder ="Enter unit" style="margin-right: 5vw; margin-left: 1vw;">
+                </div>
+                <div class="selectOption" style="margin-left: 40vw; margin-top: 1vh;">
+                    <span>From : </span>
+                    <select name="unit_diff" id="from" style="margin-left: 3vw;">
+                        <option value="Meter">Meter</option>
+                        <option value="Kilometer">KiloMeter</option>
+                        <option value="Centimeter">CentiMeter</option>
+                        <option value="Foot">Foot</option>
+                        <option value="Inch">Inch</option>
+                        <option value="Mile">Mile</option>
+                        <option value="Millimetre">Millimetre</option> 
+                        <option value="Yard">Yard</option>
+                    </select>
+                    <br>
+                    <span style="margin-right: 3.3vw;">To : </span>
+                    <select name="unit_diff" id="To" onchange="calculate(); return false" style="margin-left: 1vw;">
+                        <option value="Meter">Meter</option>
+                        <option value="Kilometer">KiloMeter</option>
+                        <option value="Centimeter">Centimeter</option>
+                        <option value="Foot">Foot</option>
+                        <option value="Inch">Inch</option>
+                        <option value="Mile">Mile</option>
+                        <option value="Millimetre">Millimetre</option> 
+                        <option value="Yard">Yard</option> 
+                    </select><br>
+                    <span style="margin-right: 3.3vw">Ans : </span><input type="number" name="unit" id="ansField" style="margin-left: 0.2vw;;margin-top: 1vh;" ><br>    
+                </div>
+                <span id="result" class="finalAns"></span>
+            </form>
+        </div>
+        <h4 style="color:#1f4a59;"><em style="border-bottom: 2px solid #1f4a59;">units supported :  </em>&nbsp;&nbsp;Meter , Millimetre , Kilometer , Centimeter , Foot , Inch , Mile , Yard</h4>
+    </div>
+    <script src="/Js/script.js"></script>
+</body>
+</html>
